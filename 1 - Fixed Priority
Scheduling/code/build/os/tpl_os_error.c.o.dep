@@ -1,0 +1,100 @@
+build/os/tpl_os_error.c.o: /Users/coro-m1-cd/trampoline/os/tpl_os_error.c \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_errorhook.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_types.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_internal_types.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_std_types.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_custom_types.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_application_def.h \
+ lab1/tpl_app_define.h /Users/coro-m1-cd/trampoline/os/tpl_config_def.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_config_check.h \
+ lab1/tpl_app_custom_types.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_compiler.h lab1/Compiler.h \
+ lab1/Compiler_Cfg.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_machine.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_machine_cortex.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_std_types.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_internal_types.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_custom_types.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_machine.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_kernel_stack.h \
+ lab1/cmsis_wrapper.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/core_cm_func_mk20dx256.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/mk20dx256.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdint.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_default_types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/features.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_intsup.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_stdint.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_compiler.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_memmap.h lab1/MemMap.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_error.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_definitions.h
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_errorhook.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_types.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_internal_types.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_std_types.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_custom_types.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_application_def.h:
+
+lab1/tpl_app_define.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_def.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_check.h:
+
+lab1/tpl_app_custom_types.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_compiler.h:
+
+lab1/Compiler.h:
+
+lab1/Compiler_Cfg.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_machine.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_machine_cortex.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_std_types.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_internal_types.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_custom_types.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_machine.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_kernel_stack.h:
+
+lab1/cmsis_wrapper.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/core_cm_func_mk20dx256.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/mk20dx256.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdint.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_default_types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/features.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_intsup.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_stdint.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_compiler.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_memmap.h:
+
+lab1/MemMap.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_error.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_definitions.h:

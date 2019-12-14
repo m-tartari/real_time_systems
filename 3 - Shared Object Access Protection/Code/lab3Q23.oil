@@ -1,0 +1,102 @@
+OIL_VERSION = "2.5" : "lab3" ;
+
+IMPLEMENTATION trampoline {
+    TASK {
+        UINT32 STACKSIZE = 500 ;
+        UINT32 PRIORITY = 1 ;
+    } ;
+    ISR {
+        UINT32 STACKSIZE = 500 ;
+    } ;
+};
+
+CPU lab3 {
+
+  OS config {
+    STATUS = EXTENDED;
+    SYSTEM_CALL = TRUE;
+    BUILD = TRUE {
+      APP_CPPSRC = "lab3.cpp";
+      APP_NAME = "lab3_exe";
+      COMMONFLAGS = "-DARDUINO=10603 -DTEENSYDUINO=124 -DF_CPU=96000000";
+      TRAMPOLINE_BASE_PATH = "/Users/coro-m1-2017-18/trampoline";
+      COMPILER = "arm-none-eabi-gcc";
+      CPPCOMPILER = "arm-none-eabi-g++";
+      ASSEMBLER = "arm-none-eabi-gcc";
+      LINKER = "arm-none-eabi-ld";
+      COPIER = "arm-none-eabi-objcopy";
+      SYSTEM = PYTHON;
+      
+      LIBRARY = LiquidCrystalFast;
+    };
+    MEMMAP = TRUE {
+      COMPILER = gcc;
+      LINKER = gnu_ld { SCRIPT = "script.ld"; };
+      ASSEMBLER = gnu_as;
+      MEMORY_PROTECTION = FALSE;
+    };
+  };
+
+  APPMODE stdMode {
+  };
+
+
+TASK bgTask {
+    PRIORITY = 1;
+    AUTOSTART = TRUE { APPMODE = stdMode; };
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+    RESOURCE = val;
+};
+
+TASK periodicTask {
+    PRIORITY = 2;
+    AUTOSTART = FALSE;
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+    RESOURCE = val;
+};
+
+TASK displayTask {
+    PRIORITY = 3;
+    AUTOSTART = FALSE;
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+    RESOURCE = val;
+};
+    
+COUNTER SystemCounter{
+  TICKSPERBASE=100;
+  MAXALLOWEDVALUE=6565874;
+  MINCYCLE=1;
+};
+
+ALARM alarmPeriodic{
+    COUNTER = SystemCounter;
+    ACTION = ACTIVATETASK{
+      TASK = periodicTask;
+    };
+    AUTOSTART = TRUE  {
+       APPMODE = stdMode; 
+       ALARMTIME = 1;
+       CYCLETIME = 1;
+    };
+};
+
+ALARM alarmDisplay{
+    COUNTER = SystemCounter;
+    ACTION = ACTIVATETASK{
+      TASK = displayTask;
+      };
+    AUTOSTART = TRUE  {
+       APPMODE = stdMode; 
+       ALARMTIME = 10;
+       CYCLETIME = 10;
+    };
+};
+
+RESOURCE val {
+  RESOURCEPROPERTY = INTERNAL;
+};
+
+};

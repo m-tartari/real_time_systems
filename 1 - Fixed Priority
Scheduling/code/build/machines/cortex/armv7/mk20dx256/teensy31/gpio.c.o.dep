@@ -1,0 +1,51 @@
+build/machines/cortex/armv7/mk20dx256/teensy31/gpio.c.o: \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/gpio.c \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/gpio.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_compiler.h lab1/tpl_app_define.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_config_def.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_config_check.h lab1/Compiler.h \
+ lab1/Compiler_Cfg.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_std_types.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/mk20dx256.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdint.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_default_types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/features.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_intsup.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_stdint.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/core_pins.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/pins_arduino.h
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/gpio.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_compiler.h:
+
+lab1/tpl_app_define.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_def.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_check.h:
+
+lab1/Compiler.h:
+
+lab1/Compiler_Cfg.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_std_types.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/mk20dx256.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdint.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_default_types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/features.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_intsup.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_stdint.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/core_pins.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/pins_arduino.h:

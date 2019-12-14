@@ -1,0 +1,59 @@
+build/machines/cortex/armv7/mk20dx256/teensy31/avr/dtostrf.c.o: \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/avr/dtostrf.c \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdio.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/_ansi.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/newlib.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/config.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/ieeefp.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/features.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/cdefs.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_default_types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/reent.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/_ansi.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/lock.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_stdint.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/stdio.h
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdio.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/_ansi.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/newlib.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/config.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/ieeefp.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/features.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/cdefs.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_default_types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/reent.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/_ansi.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/lock.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_stdint.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/stdio.h:

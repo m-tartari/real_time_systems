@@ -1,0 +1,134 @@
+build/machines/cortex/armv7/mk20dx256/teensy31/libraries/LiquidCrystalFast/LiquidCrystalFast.cpp.o: \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/libraries/LiquidCrystalFast/LiquidCrystalFast.cpp \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/libraries/LiquidCrystalFast/LiquidCrystalFast.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/inttypes.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/newlib.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/config.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/ieeefp.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/features.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_intsup.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdint.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_default_types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_stdint.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/Arduino.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/WProgram.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdlib.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/_ansi.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/reent.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/_ansi.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/lock.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/cdefs.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/stdlib.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/alloca.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/string.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/string.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/math.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/avr/pgmspace.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/avr/interrupt.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/wiring.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/binary.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/core_id.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/core_pins.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/mk20dx256.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/pins_arduino.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/libraries/WString/WString.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/ctype.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/libraries/Print/Print.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdio.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/types.h \
+ /Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/stdio.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/libraries/Print/Printable.h
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/libraries/LiquidCrystalFast/LiquidCrystalFast.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/inttypes.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/newlib.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/config.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/ieeefp.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/features.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_intsup.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdint.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_default_types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_stdint.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/Arduino.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/WProgram.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdlib.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/_ansi.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/reent.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/_ansi.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/_types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/_types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/lock.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/cdefs.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/stdlib.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/alloca.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/string.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/string.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/math.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/avr/pgmspace.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/avr/interrupt.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/wiring.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/binary.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/core_id.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/core_pins.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/mk20dx256.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/pins_arduino.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/libraries/WString/WString.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/ctype.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/libraries/Print/Print.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/stdio.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/machine/types.h:
+
+/Users/coro-m1-cd/Tools/gcc-arm/arm-none-eabi/include/sys/stdio.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/armv7/mk20dx256/teensy31/libraries/Print/Printable.h:

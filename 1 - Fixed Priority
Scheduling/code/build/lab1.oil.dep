@@ -1,0 +1,11 @@
+lab1.oil: \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/config.oil \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/kernel.oil \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/api.oil \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/api_STM.oil \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/cortex/config.oil \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/cortex/armv7/config.oil \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/cortex/armv7/buildOptions.oil \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/cortex/armv7/mk20dx256/config.oil \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/cortex/armv7/mk20dx256/teensy31/config.oil \
+ /Users/coro-m1-cd/trampoline/goil/templates/config/config2.5.oil

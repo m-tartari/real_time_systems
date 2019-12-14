@@ -1,0 +1,23 @@
+build/lab1/tpl_primary_irq.S.o: lab1/tpl_primary_irq.S \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_assembler.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_asm_definitions.h \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_kernel_stack.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_as_memmap.h lab1/tpl_app_define.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_config_def.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_config_check.h lab1/AsMemMap.h
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_assembler.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_asm_definitions.h:
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_kernel_stack.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_as_memmap.h:
+
+lab1/tpl_app_define.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_def.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_check.h:
+
+lab1/AsMemMap.h:

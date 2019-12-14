@@ -1,0 +1,76 @@
+OIL_VERSION = "2.5" : "lab1" ;
+
+IMPLEMENTATION trampoline {
+    TASK {
+        UINT32 STACKSIZE = 500 ;
+        UINT32 PRIORITY = 1 ;
+    } ;
+    ISR {
+        UINT32 STACKSIZE = 500 ;
+    } ;
+};
+
+CPU lab1 {
+
+    OS config {
+        STATUS = EXTENDED;
+        SYSTEM_CALL = TRUE;
+        BUILD = TRUE {
+          APP_CPPSRC = "lab1.cpp";
+          APP_NAME = "lab1_exe";
+          COMMONFLAGS = "-DARDUINO=10603 -DTEENSYDUINO=124 -DF_CPU=96000000";
+          TRAMPOLINE_BASE_PATH = "/Users/coro-m1-cd/trampoline";
+          COMPILER = "arm-none-eabi-gcc";
+          CPPCOMPILER = "arm-none-eabi-g++";
+          ASSEMBLER = "arm-none-eabi-gcc";
+          LINKER = "arm-none-eabi-ld";
+          COPIER = "arm-none-eabi-objcopy";
+          SYSTEM = PYTHON;
+          
+          LIBRARY = LiquidCrystalFast;
+        };
+        MEMMAP = TRUE {
+          COMPILER = gcc;
+          LINKER = gnu_ld { SCRIPT = "script.ld"; };
+          ASSEMBLER = gnu_as;
+          MEMORY_PROTECTION = FALSE;
+        };
+    };
+
+    APPMODE stdMode {
+    };
+
+
+    EVENT evt_0 {
+        MASK = AUTO;
+    };
+
+    EVENT evt_1 {
+        MASK = AUTO;
+    };
+
+
+    TASK a_task {
+        PRIORITY = 1;
+        AUTOSTART = TRUE { APPMODE = stdMode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+    };
+
+    TASK task_0 {
+        PRIORITY = 8;
+        AUTOSTART = FALSE;
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        EVENT = evt_0;
+    };
+
+    TASK task_1 {
+        PRIORITY = 8;
+        AUTOSTART = FALSE;
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        EVENT = evt_1;
+    };
+
+};

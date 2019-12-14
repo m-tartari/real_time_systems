@@ -1,0 +1,109 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red128\green0\blue128;\red255\green0\blue0;
+\red255\green128\blue0;\red128\green128\blue128;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl-340\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 OIL_VERSION\cf0  \cf3 =\cf0  \cf4 "2.5"\cf0  \cf3 :\cf0  \cf4 "lab1"\cf0  \cf3 ;\cf0 \
+\
+\cf2 IMPLEMENTATION\cf0  \cf5 trampoline\cf0  \cf3 \{\cf0 \
+    \cf5 TASK\cf0  \cf3 \{\cf0 \
+        \cf2 UINT32\cf0  \cf5 STACKSIZE\cf0  \cf3 =\cf0  \cf6 500\cf0  \cf3 ;\cf0 \
+        \cf2 UINT32\cf0  \cf5 PRIORITY\cf0  \cf3 =\cf0  \cf6 1\cf0  \cf3 ;\cf0 \
+    \cf3 \}\cf0  \cf3 ;\cf0 \
+    \cf5 ISR\cf0  \cf3 \{\cf0 \
+        \cf2 UINT32\cf0  \cf5 STACKSIZE\cf0  \cf3 =\cf0  \cf6 500\cf0  \cf3 ;\cf0 \
+    \cf3 \}\cf0  \cf3 ;\cf0 \
+\cf3 \};\cf0 \
+\
+\cf2 CPU\cf0  \cf5 lab1\cf0  \cf3 \{\cf0 \
+\
+  \cf5 OS\cf0  \cf5 config\cf0  \cf3 \{\cf0 \
+    \cf5 STATUS\cf0  \cf3 =\cf0  \cf5 EXTENDED\cf3 ;\cf0 \
+    \cf5 SYSTEM_CALL\cf0  \cf3 =\cf0  \cf2 TRUE\cf3 ;\cf0 \
+    \cf5 BUILD\cf0  \cf3 =\cf0  \cf2 TRUE\cf0  \cf3 \{\cf0 \
+      \cf5 APP_CPPSRC\cf0  \cf3 =\cf0  \cf4 "lab2.cpp"\cf3 ;\cf0 \
+      \cf5 APP_NAME\cf0  \cf3 =\cf0  \cf4 "lab2_exe"\cf3 ;\cf0 \
+      \cf5 COMMONFLAGS\cf0  \cf3 =\cf0  \cf4 "-DARDUINO=10603 -DTEENSYDUINO=124 -DF_CPU=96000000"\cf3 ;\cf0 \
+      \cf5 TRAMPOLINE_BASE_PATH\cf0  \cf3 =\cf0  \cf4 "/Users/m1-coro-cd/trampoline"\cf3 ;\cf0 \
+      \cf5 COMPILER\cf0  \cf3 =\cf0  \cf4 "arm-none-eabi-gcc"\cf3 ;\cf0 \
+      \cf5 CPPCOMPILER\cf0  \cf3 =\cf0  \cf4 "arm-none-eabi-g++"\cf3 ;\cf0 \
+      \cf5 ASSEMBLER\cf0  \cf3 =\cf0  \cf4 "arm-none-eabi-gcc"\cf3 ;\cf0 \
+      \cf5 LINKER\cf0  \cf3 =\cf0  \cf4 "arm-none-eabi-ld"\cf3 ;\cf0 \
+      \cf5 COPIER\cf0  \cf3 =\cf0  \cf4 "arm-none-eabi-objcopy"\cf3 ;\cf0 \
+      \cf5 SYSTEM\cf0  \cf3 =\cf0  \cf5 PYTHON\cf3 ;\cf0 \
+      \
+      \cf5 LIBRARY\cf0  \cf3 =\cf0  \cf5 LiquidCrystalFast\cf3 ;\cf0 \
+    \cf3 \};\cf0 \
+    \cf5 MEMMAP\cf0  \cf3 =\cf0  \cf2 TRUE\cf0  \cf3 \{\cf0 \
+      \cf5 COMPILER\cf0  \cf3 =\cf0  \cf5 gcc\cf3 ;\cf0 \
+      \cf5 LINKER\cf0  \cf3 =\cf0  \cf5 gnu_ld\cf0  \cf3 \{\cf0  \cf5 SCRIPT\cf0  \cf3 =\cf0  \cf4 "script.ld"\cf3 ;\cf0  \cf3 \};\cf0 \
+      \cf5 ASSEMBLER\cf0  \cf3 =\cf0  \cf5 gnu_as\cf3 ;\cf0 \
+      \cf5 MEMORY_PROTECTION\cf0  \cf3 =\cf0  \cf2 FALSE\cf3 ;\cf0 \
+    \cf3 \};\cf0 \
+  \cf3 \};\cf0 \
+\
+  \cf5 APPMODE\cf0  \cf5 stdMode\cf0  \cf3 \{\cf0 \
+  \cf3 \};\cf0 \
+\
+\
+\cf5 TASK\cf0  \cf5 bgTask\cf0  \cf3 \{\cf0 \
+    \cf5 PRIORITY\cf0  \cf3 =\cf0  \cf6 1\cf3 ;\cf0 \
+    \cf5 AUTOSTART\cf0  \cf3 =\cf0  \cf2 TRUE\cf0  \cf3 \{\cf0  \cf5 APPMODE\cf0  \cf3 =\cf0  \cf5 stdMode\cf3 ;\cf0  \cf3 \};\cf0 \
+    \cf5 ACTIVATION\cf0  \cf3 =\cf0  \cf6 1\cf3 ;\cf0 \
+    \cf5 SCHEDULE\cf0  \cf3 =\cf0  \cf5 FULL\cf3 ;\cf0 \
+    \cf5 RESOURCE\cf0  \cf3 =\cf0  \cf5 S1\cf3 ;\cf0 \
+\cf3 \};\cf0 \
+\
+\cf5 TASK\cf0  \cf5 periodicTask\cf0  \cf3 \{\cf0 \
+    \cf5 PRIORITY\cf0  \cf3 =\cf0  \cf6 3\cf3 ;\cf0 \
+    \cf5 AUTOSTART\cf0  \cf3 =\cf0  \cf2 FALSE\cf3 ;\cf0 \
+    \cf5 ACTIVATION\cf0  \cf3 =\cf0  \cf6 1\cf3 ;\cf0 \
+    \cf5 SCHEDULE\cf0  \cf3 =\cf0  \cf5 FULL\cf3 ;\cf0 \
+    \cf5 RESOURCE\cf0  \cf3 =\cf0  \cf5 S1\cf3 ;\cf0 \
+\cf3 \};\cf0 \
+\
+\cf5 TASK\cf0  \cf5 displayTask\cf0  \cf3 \{\cf0 \
+    \cf5 PRIORITY\cf0  \cf3 =\cf0  \cf6 2\cf3 ;\cf0 \
+    \cf5 AUTOSTART\cf0  \cf3 =\cf0  \cf2 FALSE\cf3 ;\cf0 \
+    \cf5 ACTIVATION\cf0  \cf3 =\cf0  \cf6 1\cf3 ;\cf0 \
+    \cf5 SCHEDULE\cf0  \cf3 =\cf0  \cf5 FULL\cf3 ;\cf0 \
+    \cf5 RESOURCE\cf0  \cf3 =\cf0  \cf5 S1\cf3 ;\cf0 \
+\cf3 \};\cf0 \
+    \
+\cf5 COUNTER\cf0  \cf5 SystemCounter\cf3 \{\cf0 \
+  \cf5 TICKSPERBASE\cf3 =\cf6 100\cf3 ;\cf0 \
+  \cf5 MAXALLOWEDVALUE\cf3 =\cf6 6565874\cf3 ;\cf0 \
+  \cf5 MINCYCLE\cf3 =\cf6 1\cf3 ;\cf0 \
+\cf3 \};\cf0 \
+\
+\cf5 ALARM\cf0  \cf5 alarmPeriodic\cf3 \{\cf0 \
+    \cf5 COUNTER\cf0  \cf3 =\cf0  \cf5 SystemCounter\cf3 ;\cf0 \
+    \cf5 ACTION\cf0  \cf3 =\cf0  \cf5 ACTIVATETASK\cf3 \{\cf0 \
+      \cf5 TASK\cf0  \cf3 =\cf0  \cf5 periodicTask\cf3 ;\cf0 \
+    \cf3 \};\cf0 \
+    \cf5 AUTOSTART\cf0  \cf3 =\cf0  \cf2 TRUE\cf0   \cf3 \{\cf0 \
+       \cf5 APPMODE\cf0  \cf3 =\cf0  \cf5 stdMode\cf3 ;\cf0  \
+       \cf5 ALARMTIME\cf0  \cf3 =\cf0  \cf6 1\cf3 ;\cf0 \
+       \cf5 CYCLETIME\cf0  \cf3 =\cf0  \cf6 1\cf3 ;\cf0 \
+    \cf3 \};\cf0 \
+\cf3 \};\cf0 \
+\
+\cf5 ALARM\cf0  \cf5 alarmDisplay\cf3 \{\cf0 \
+    \cf5 COUNTER\cf0  \cf3 =\cf0  \cf5 SystemCounter\cf3 ;\cf0 \
+    \cf5 ACTION\cf0  \cf3 =\cf0  \cf5 ACTIVATETASK\cf3 \{\cf0 \
+      \cf5 TASK\cf0  \cf3 =\cf0  \cf5 displayTask\cf3 ;\cf0 \
+      \cf3 \};\cf0 \
+    \cf5 AUTOSTART\cf0  \cf3 =\cf0  \cf2 TRUE\cf0   \cf3 \{\cf0 \
+       \cf5 APPMODE\cf0  \cf3 =\cf0  \cf5 stdMode\cf3 ;\cf0  \
+       \cf5 ALARMTIME\cf0  \cf3 =\cf0  \cf6 10\cf3 ;\cf0 \
+       \cf5 CYCLETIME\cf0  \cf3 =\cf0  \cf6 10\cf3 ;\cf0 \
+    \cf3 \};\cf0 \
+\cf3 \};\cf0 \
+\
+\cf5 RESOURCE\cf0  \cf5 S1\cf0  \cf3 \{\cf0 \
+  \cf5 RESOURCEPROPERTY\cf0  \cf3 =\cf0  \cf5 STANDARD\cf3 ;\cf0 \
+\cf3 \};\cf0 \
+\
+\cf3 \};}

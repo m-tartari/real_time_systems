@@ -1,0 +1,93 @@
+OIL_VERSION = "2.5" : "lab2" ;
+
+IMPLEMENTATION trampoline {
+    TASK {
+        UINT32 STACKSIZE = 500 ;
+        UINT32 PRIORITY = 1 ;
+    } ;
+    ISR {
+        UINT32 STACKSIZE = 500 ;
+    } ;
+};
+
+CPU lab2 {
+
+  OS config {
+    STATUS = EXTENDED;
+    SYSTEM_CALL = TRUE;
+    BUILD = TRUE {
+      APP_CPPSRC = "lab2.cpp";
+      APP_NAME = "lab2_exe";
+      COMMONFLAGS = "-DARDUINO=10603 -DTEENSYDUINO=124 -DF_CPU=96000000";
+      TRAMPOLINE_BASE_PATH = "/Users/coro-m1-cd/trampoline";
+      COMPILER = "arm-none-eabi-gcc";
+      CPPCOMPILER = "arm-none-eabi-g++";
+      ASSEMBLER = "arm-none-eabi-gcc";
+      LINKER = "arm-none-eabi-ld";
+      COPIER = "arm-none-eabi-objcopy";
+      SYSTEM = PYTHON;
+      
+      LIBRARY = LiquidCrystalFast;
+    };
+    MEMMAP = TRUE {
+      COMPILER = gcc;
+      LINKER = gnu_ld { SCRIPT = "script.ld"; };
+      ASSEMBLER = gnu_as;
+      MEMORY_PROTECTION = FALSE;
+    };
+  };
+
+  APPMODE stdMode {
+  };
+
+    EVENT evt {
+        MASK = AUTO;
+    };
+
+  EVENT evt_f {
+    MASK = AUTO;
+  };
+
+  TASK button_scanner {
+    PRIORITY = 3;
+    AUTOSTART = FALSE;
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+  };
+
+  TASK Body {
+    PRIORITY = 3;
+    AUTOSTART = FALSE;
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+    EVENT = evt;
+    EVENT = evt_f;
+    };
+
+  COUNTER SystemCounter {
+    TICKSPERBASE = 100;
+    MAXALLOWEDVALUE = 65535;
+    MINCYCLE = 1;
+  };
+
+  ALARM run_t1 {
+    COUNTER = SystemCounter;
+    ACTION = SETEVENT{
+    TASK= Body;
+    EVENT=evt;
+    };
+    AUTOSTART = FALSE;
+  };
+  
+  ALARM run_button_scanner {
+    COUNTER = SystemCounter;
+    ACTION = ACTIVATETASK {
+      TASK = button_scanner;
+    };
+    AUTOSTART = TRUE {
+      APPMODE = stdMode;
+      ALARMTIME = 1;
+      CYCLETIME = 1;
+    };
+  };
+};

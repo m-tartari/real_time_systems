@@ -1,0 +1,13 @@
+build/machines/cortex/tpl_ctx_switch.S.o: \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_ctx_switch.S \
+ /Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_kernel_stack.h \
+ lab1/tpl_app_define.h /Users/coro-m1-cd/trampoline/os/tpl_config_def.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_config_check.h
+
+/Users/coro-m1-cd/trampoline/machines/cortex/tpl_os_kernel_stack.h:
+
+lab1/tpl_app_define.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_def.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_check.h:

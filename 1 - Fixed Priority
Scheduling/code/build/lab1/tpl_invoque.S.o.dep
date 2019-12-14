@@ -1,0 +1,20 @@
+build/lab1/tpl_invoque.S.o: lab1/tpl_invoque.S \
+ /Users/coro-m1-cd/trampoline/os/tpl_os_application_def.h \
+ lab1/tpl_app_define.h /Users/coro-m1-cd/trampoline/os/tpl_config_def.h \
+ /Users/coro-m1-cd/trampoline/os/tpl_config_check.h \
+ lab1/tpl_service_ids.h /Users/coro-m1-cd/trampoline/os/tpl_as_memmap.h \
+ lab1/AsMemMap.h
+
+/Users/coro-m1-cd/trampoline/os/tpl_os_application_def.h:
+
+lab1/tpl_app_define.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_def.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_config_check.h:
+
+lab1/tpl_service_ids.h:
+
+/Users/coro-m1-cd/trampoline/os/tpl_as_memmap.h:
+
+lab1/AsMemMap.h:
